@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var showHelloWorldBtn: UIButton!
+    @IBOutlet weak var helloWorldBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,4 +27,7 @@ class ViewController: UIViewController {
         self.present(alertController, animated :true, completion: nil)
     }
     
+    @IBAction func hideHelloWorldBtn() {
+        helloWorldBtn.isHidden = true
+    }
 }

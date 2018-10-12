@@ -19,11 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZY-dR-ObP">
-                                <rect key="frame" x="127" y="318" width="121" height="30"/>
+                                <rect key="frame" x="127" y="299" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Hello World"/>
                                 <connections>
                                     <action selector="showHelloWorldMessageBox" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0W-Ia-7Dh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-n6-mG2">
+                                <rect key="frame" x="127" y="337" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide other button"/>
+                                <connections>
+                                    <action selector="hideHelloWorldBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="6P8-bs-DFN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,7 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="showHelloWorldBtn" destination="5ZY-dR-ObP" id="8Fm-CK-48D"/>
+                        <outlet property="helloWorldBtn" destination="5ZY-dR-ObP" id="mFt-pz-UZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
